@@ -7,7 +7,7 @@
         <!--Photos-->
         <scene sceneID="ud4-0s-IlA">
             <objects>
-                <tableViewController id="Y2N-eK-NxW" sceneMemberID="viewController">
+                <tableViewController id="Y2N-eK-NxW" customClass="PhotosTableViewController" customModule="SeguesAndScenesDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yz1-h7-8FV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,10 +34,10 @@
             </objects>
             <point key="canvasLocation" x="955" y="475"/>
         </scene>
-        <!--View Controller-->
+        <!--Display View Controller-->
         <scene sceneID="6VM-TA-pWO">
             <objects>
-                <viewController id="hdf-2e-WOf" sceneMemberID="viewController">
+                <viewController id="hdf-2e-WOf" customClass="DisplayViewController" customModule="SeguesAndScenesDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qWR-kS-ii2"/>
                         <viewControllerLayoutGuide type="bottom" id="AOK-aG-OLC"/>
@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="1770" y="475"/>
         </scene>
-        <!--View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="w7U-i9-agH">
             <objects>
-                <viewController id="MG8-0a-16B" sceneMemberID="viewController">
+                <viewController id="MG8-0a-16B" customClass="InfoViewController" customModule="SeguesAndScenesDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tV1-Lu-xRE"/>
                         <viewControllerLayoutGuide type="bottom" id="gJc-8J-7uK"/>

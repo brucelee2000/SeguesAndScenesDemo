@@ -9,6 +9,8 @@
 import UIKit
 
 class PhotosTableViewController: UITableViewController {
+    
+    var photos:[Photo] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()

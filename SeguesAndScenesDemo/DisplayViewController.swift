@@ -10,7 +10,7 @@ import UIKit
 
 class DisplayViewController: UIViewController {
     
-    var currentPhoto:Photo?
+    var currentPhoto:PhotoData?
 
     @IBOutlet weak var currentImage: UIImageView!
     

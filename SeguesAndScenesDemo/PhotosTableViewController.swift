@@ -7,14 +7,30 @@
 //
 
 import UIKit
+import Foundation
 
 class PhotosTableViewController: UITableViewController {
     
-    var photos:[Photo] = []
+    var photoArray:[PhotoData] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        var newPhoto = PhotoData(name: "Emerald Bay", filename: "emeraldbay", notes: "Emerald Bay, one of the bays is tested here.")
+        photoArray.append(newPhoto)
+        
+        newPhoto = PhotoData(name: "A Joshua tree", filename: "joshuatree", notes: "Joshua tree, one of the trees is tested here")
+        photoArray.append(newPhoto)
+        
+        newPhoto = PhotoData(name: "Sunset in Ventura", filename: "sunset", notes: "Sunset scene, one of the scenes is tested here")
+        photoArray.append(newPhoto)
+        
+        newPhoto = PhotoData(name: "Snowman at Lake Tahoe", filename: "snowman", notes: "Snowman at Tahoe, one of the snowmen is tested here")
+        photoArray.append(newPhoto)
+        
+        newPhoto = PhotoData(name: "Red Rock", filename: "redrock", notes: "Red Rock, one of the rocks is tested here")
+        photoArray.append(newPhoto)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -32,24 +48,25 @@ class PhotosTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return photoArray.count
     }
-
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("myPrototypeCell", forIndexPath: indexPath) as UITableViewCell
 
         // Configure the cell...
+        var currentPhoto = photoArray[indexPath.row]
+        cell.textLabel?.text = currentPhoto.name
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.

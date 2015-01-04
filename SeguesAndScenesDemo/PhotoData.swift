@@ -1,5 +1,5 @@
 //
-//  Photo.swift
+//  PhotoData.swift
 //  SeguesAndScenesDemo
 //
 //  Created by Yosemite on 1/3/15.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-// Struct will automatically generate initializer while class does not
-struct Photo {
+// Struct can automatically initialize the properties while class cannot.
+struct PhotoData {
     var name:String
-    var fileName:String
+    var filename:String
     var notes:String
 }

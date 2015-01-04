@@ -12,10 +12,10 @@
 		A744BBD01A590BFC0057DE5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A744BBCF1A590BFC0057DE5D /* Images.xcassets */; };
 		A744BBD31A590BFC0057DE5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A744BBD11A590BFC0057DE5D /* LaunchScreen.xib */; };
 		A744BBDF1A590BFC0057DE5D /* SeguesAndScenesDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744BBDE1A590BFC0057DE5D /* SeguesAndScenesDemoTests.swift */; };
-		A744BBEB1A5910090057DE5D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744BBEA1A5910090057DE5D /* Photo.swift */; };
-		A744BBED1A5910510057DE5D /* PhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744BBEC1A5910510057DE5D /* PhotosTableViewController.swift */; };
-		A744BBEF1A5910890057DE5D /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744BBEE1A5910890057DE5D /* DisplayViewController.swift */; };
-		A744BBF11A5910A50057DE5D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744BBF01A5910A50057DE5D /* InfoViewController.swift */; };
+		A744BBF51A5919430057DE5D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744BBF41A5919430057DE5D /* InfoViewController.swift */; };
+		A744BBF81A59197C0057DE5D /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744BBF61A59197C0057DE5D /* DisplayViewController.swift */; };
+		A744BBF91A59197C0057DE5D /* PhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744BBF71A59197C0057DE5D /* PhotosTableViewController.swift */; };
+		A744BBFF1A591E790057DE5D /* PhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744BBFE1A591E790057DE5D /* PhotoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +38,10 @@
 		A744BBD81A590BFC0057DE5D /* SeguesAndScenesDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeguesAndScenesDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A744BBDD1A590BFC0057DE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A744BBDE1A590BFC0057DE5D /* SeguesAndScenesDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeguesAndScenesDemoTests.swift; sourceTree = "<group>"; };
-		A744BBEA1A5910090057DE5D /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = ../Photo.swift; sourceTree = "<group>"; };
-		A744BBEC1A5910510057DE5D /* PhotosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotosTableViewController.swift; path = ../PhotosTableViewController.swift; sourceTree = "<group>"; };
-		A744BBEE1A5910890057DE5D /* DisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisplayViewController.swift; path = ../DisplayViewController.swift; sourceTree = "<group>"; };
-		A744BBF01A5910A50057DE5D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = ../InfoViewController.swift; sourceTree = "<group>"; };
+		A744BBF41A5919430057DE5D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		A744BBF61A59197C0057DE5D /* DisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
+		A744BBF71A59197C0057DE5D /* PhotosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosTableViewController.swift; sourceTree = "<group>"; };
+		A744BBFE1A591E790057DE5D /* PhotoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				A744BBC81A590BFC0057DE5D /* AppDelegate.swift */,
-				A744BBF01A5910A50057DE5D /* InfoViewController.swift */,
-				A744BBEE1A5910890057DE5D /* DisplayViewController.swift */,
-				A744BBEC1A5910510057DE5D /* PhotosTableViewController.swift */,
-				A744BBEA1A5910090057DE5D /* Photo.swift */,
+				A744BBF41A5919430057DE5D /* InfoViewController.swift */,
+				A744BBF61A59197C0057DE5D /* DisplayViewController.swift */,
+				A744BBFE1A591E790057DE5D /* PhotoData.swift */,
+				A744BBF71A59197C0057DE5D /* PhotosTableViewController.swift */,
 				A744BBCC1A590BFC0057DE5D /* Main.storyboard */,
 				A744BBCF1A590BFC0057DE5D /* Images.xcassets */,
 				A744BBD11A590BFC0057DE5D /* LaunchScreen.xib */,
@@ -221,11 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A744BBEB1A5910090057DE5D /* Photo.swift in Sources */,
+				A744BBF91A59197C0057DE5D /* PhotosTableViewController.swift in Sources */,
+				A744BBFF1A591E790057DE5D /* PhotoData.swift in Sources */,
 				A744BBC91A590BFC0057DE5D /* AppDelegate.swift in Sources */,
-				A744BBED1A5910510057DE5D /* PhotosTableViewController.swift in Sources */,
-				A744BBEF1A5910890057DE5D /* DisplayViewController.swift in Sources */,
-				A744BBF11A5910A50057DE5D /* InfoViewController.swift in Sources */,
+				A744BBF51A5919430057DE5D /* InfoViewController.swift in Sources */,
+				A744BBF81A59197C0057DE5D /* DisplayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +417,7 @@
 				A744BBE41A590BFC0057DE5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A744BBE51A590BFC0057DE5D /* Build configuration list for PBXNativeTarget "SeguesAndScenesDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +426,7 @@
 				A744BBE71A590BFC0057DE5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,10 +10,18 @@ import UIKit
 
 class InfoViewController: UIViewController {
     
+    var currentPhoto:PhotoData?
+    
     @IBOutlet weak var detailsLabel: UILabel!
 
+    @IBAction func oKButtonPressed(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        detailsLabel.text = currentPhoto!.notes
 
         // Do any additional setup after loading the view.
     }

@@ -16,7 +16,11 @@ class DisplayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        var image = UIImage(named: currentPhoto!.filename)
+        currentImage.image = image
+        
+        self.title = currentPhoto!.name
         // Do any additional setup after loading the view.
     }
 
@@ -26,14 +30,16 @@ class DisplayViewController: UIViewController {
     }
     
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
+        var thirdScene = segue.destinationViewController as InfoViewController
         // Pass the selected object to the new view controller.
+        thirdScene.currentPhoto = currentPhoto
     }
-    */
+
 
 }
